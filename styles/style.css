@@ -4,7 +4,7 @@
 }
 
 :root{
-    --color-primary: #3b3b3b;
+    --color-primary: #000000;
     --color-secondary: #9ad4d9;
     --color-teal-1: #dbfcff;
     --color-green-1: #C9FFDB;
@@ -22,6 +22,15 @@ body{
     font-size: 1.1rem;
     color: var(--color-white);
     transition: all 0.4s ease-in-out;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.show{
+    opacity: 1;
 }
 
 a{
@@ -141,7 +150,10 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
-    
+}
+
+#gradient{
+    filter: grayscale(10%);
 }
 
 .header-content .left-header{
@@ -169,40 +181,41 @@ section{
     transition: all 0.4s ease-in-out;
 }
 
-.header-content .left-header .image img{
+.header-content .left-header #cat{
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all 0.4s ease-in-out;
-    filter: grayscale(100%);
-  }
+}
 
-  .header-content .left-header .image img:hover{
-    filter: grayscale(0);
-  }
+.eye{
+    width: 10%;
+    position: absolute;
+}
 
-  .header-content .right-header{
+.header-content .right-header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-right: 18rem;
-  }
+}
 
-  .header-content .right-header .name span{
-    color: var(--color-secondary);
-  }
+.header-content .right-header .introduction span{
+    color: #00F7FF;
+    text-shadow: 5px 5px #C90C0F, 10px 10px #07870B ;
+}
 
-  .header-content .right-header p{
+.header-content .right-header p{
     margin: 1.5rem 0;
     line-height: 1.5rem;
-  }
+}
 
-  .btn-container{
+.btn-container{
     display: flex;
     align-self: flex-start;
-  }
-  
-  .main-btn{
+}
+
+.main-btn{
     border-radius: 30px;
     color: inherit;
     font-weight: 600;
@@ -212,22 +225,22 @@ section{
     align-self: flex-start;
     align-items: center;
     overflow: hidden;
-  }
+}
 
-  .main-btn .btn-text{
+.main-btn .btn-text{
     padding: 0 0.5rem;
-  }
+}
 
-  .main-btn .btn-icon{
+.main-btn .btn-icon{
     background-color: var(--color-secondary);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     padding: 1rem;
-  }
+}
 
-  .main-btn::before{
+.main-btn::before{
     content: "";
     position: absolute;
     top: 0;
@@ -235,16 +248,16 @@ section{
     transform: translateX(-100%);
     transition: all 0.4s ease-out;
     z-index: -1;
-  }
-  
-  .main-btn:hover{
-    transition: all 0.4s ease-out;
-  }
+}
 
-  .main-btn:hover::before{
+.main-btn:hover{
+    transition: all 0.4s ease-out;
+}
+
+.main-btn:hover::before{
     width: 100%;
     height: 100%;
     background-color: var(--color-secondary);
     transform: translateX(0);
     transition: all 0.4s ease-out;
-  }
+}

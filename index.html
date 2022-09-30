@@ -11,24 +11,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/0c7329de50.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 </head>
 <body class="main-content">
 
     <header class="section sec1 header active" id="home">
-        <div class="header-content">
+        <div class="header-content" id="gradient">
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
-                    <img src="img/cat.png" alt="cat">
+                    <img src="img/cat-peeking-over-wall.png" alt="cat" id="cat">
+                    <div class="eyes">
+                        <img class="eye" src="img/cat-eye.png" style="top: 355px; left: 130px;">
+                        <img class="eye" src="img/cat-eye.png" style="top: 380px; left: 295px;">
+                    </div>
                 </div>
             </div>
             <div class="right-header">
-                <h1 class="name">
-                    Hi, I am <span>Sam Tang.</span>
+                <h1 class="introduction">
+                    Hi, I am 
+                    <span class="hidden name">Sam Tang.</span>
                     A coding enthusiast.
                 </h1>
                 <p>
-                    add stuff here later
+                    I love coding, blacksmithing and animals.
                 </p>
                 <div class="btn-container">
                     <a href="" class="main-btn">
@@ -60,6 +66,8 @@
             <i class="fa-solid fa-phone"></i>
         </div>
     </div>
-    <script src="apps.js"></script>
+    <script src="scripts/apps.js"></script>
+    <script src="scripts/gradient.js"></script>
+    <script src="scripts/eyemove.js"></script>
 </body>
 </html>
