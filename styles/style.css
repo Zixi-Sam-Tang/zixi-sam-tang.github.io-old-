@@ -22,11 +22,12 @@ body{
     font-size: 1.1rem;
     color: var(--color-white);
     transition: all 0.4s ease-in-out;
+    overflow: hidden;
 }
 
 .hidden{
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 
 .show{
@@ -48,13 +49,14 @@ header{
     padding: 0 !important;
 }
 
+/*section style*/
 section{
     min-height: 100vh;
     width: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    padding: 3rem 18rem;
+    padding-top: 3rem;
 }
 
 .section{
@@ -85,8 +87,17 @@ section{
 
 .active{
     display: block;
-    animation: transition 1s ease-in-out;
+    animation: transition 1s ease-in-out, fade-in 1s ease-in-out;
     transform: translateY(0);
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 
 @keyframes transition {
@@ -98,6 +109,7 @@ section{
     }
 }
 
+/*control style*/
 .controls{
     position: fixed;
     z-index: 10;
@@ -146,6 +158,7 @@ section{
     pointer-events: none;
 }
 
+/*main page content*/
 .header-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -162,7 +175,7 @@ section{
     position: relative;
 }
 
-.header-content .left-header .h-shape{
+.header-content .left-header .shape{
     transition: all 0.4s ease-in-out;
     width: 65%;
     height: 100%;
@@ -260,4 +273,20 @@ section{
     background-color: var(--color-secondary);
     transform: translateX(0);
     transition: all 0.4s ease-out;
+}
+
+/*about page styling*/
+.about{
+    text-align: center;
+}
+
+.about h2{
+    position: relative;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.about h2 span{
+    color: var(--color-secondary);
+    text-shadow: 3px 3px 0 #57747D;
 }
