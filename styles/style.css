@@ -175,7 +175,6 @@ section{
     align-items: center;
     position: relative;
     height: 100%;
-    border: solid;
 }
 
 .header-content .left-header .shape{
@@ -201,7 +200,13 @@ section{
     margin-top: auto;
     margin-bottom: auto;
     transition: all 0.4s ease-in-out;
-    border: solid #000000;
+}
+
+@media screen and (max-width: 900px){
+    .left-header{
+        opacity: 0;
+        width: 0;
+    }
 }
 
 .eye{
