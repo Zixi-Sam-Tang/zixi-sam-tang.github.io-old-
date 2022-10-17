@@ -165,7 +165,7 @@ section{
 }
 
 #gradient{
-    filter: grayscale(10%);
+    filter: grayscale(15%);
 }
 
 .header-content .left-header{
@@ -190,8 +190,19 @@ section{
 }
 
 .header-content .left-header .image{
+    position: relative;
     margin-left: -0.5rem;
     transition: all 0.4s ease-in-out;
+}
+
+#eye1{
+    top: 15.7rem;
+    left: -0.7rem;
+}
+
+#eye2{
+    top: 16.8rem;
+    left: 7rem;
 }
 
 .header-content .left-header #cat{

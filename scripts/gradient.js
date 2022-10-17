@@ -1,6 +1,6 @@
 var colors = new Array(
-  [62, 35, 255], //dark blue
-  [60, 255, 60], //yellowish green
+  //[62, 35, 255], //dark blue
+  //[60, 255, 60], //yellowish green
   [255, 35, 98], //reddish pink
   [255, 0, 255], //hot pink
   [255, 128, 0], //orange

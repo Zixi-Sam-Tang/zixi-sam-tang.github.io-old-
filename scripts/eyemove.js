@@ -5,11 +5,7 @@ const eye2 = document.getElementById('eye2');
 var anchorX = anchor.x + anchor.clientWidth / 10;
 var anchorY = anchor.y + anchor.clientHeight / 2.2;
 
-eye1.style.top = (anchorY - 20) + 'px';
-eye1.style.left = (anchorX - 40) + 'px';
-eye2.style.top = (anchorY - 4) + 'px';
-eye2.style.left = (anchorX + 82) + 'px';
-
+//tracks the mouse
 document.addEventListener('mousemove', (e) => {
     const mouseX = e.clientX;
     const mouseY = e.clientY;
@@ -24,19 +20,21 @@ document.addEventListener('mousemove', (e) => {
     })
 })
 
-window.addEventListener('resize', (e) => {
-    setTimeout(() => {
-        anchorX = anchor.x + anchor.clientWidth / 10;
-        anchorY = anchor.y + anchor.clientHeight / 2.2;
+//moves the eyes to the eyesockets after window resize event
+// window.addEventListener('resize', (e) => {
+//     setTimeout(() => {
+//         anchorX = anchor.x + anchor.clientWidth / 10;
+//         anchorY = anchor.y + anchor.clientHeight / 2.2;
 
-        eye1.style.top = (anchorY - 20) + 'px';
-        eye1.style.left = (anchorX - 40) + 'px';
-        eye2.style.top = (anchorY - 5) + 'px';
-        eye2.style.left = (anchorX + 85) + 'px';
-    }, 400)
+//         eye1.style.top = (anchorY - 34) / 16 + 'rem';
+//         eye1.style.left = (anchorX - 40) / 16 + 'rem';
+//         eye2.style.top = (anchorY - 16) / 16 + 'rem';
+//         eye2.style.left = (anchorX + 82) / 16 + 'rem';
+//     }, 500)
     
-})
+// })
 
+//finds the angle between the center of the eye and the cursor
 function angle(cursorX, cursorY, eyeX, eyeY){
     const dX = eyeX - cursorX;
     const dY = eyeY - cursorY;
