@@ -389,6 +389,29 @@ section {
     width: 50%;
 }
 
+.resume {
+    color: var(--color-secondary);
+    position: relative;
+}
+
+.resume:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--color-secondary);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.resume:hover:after {
+    width: 100%;
+    left: 0;
+}
+
 .contact .title h2 {
     position: relative;
     font-size: 4rem;
@@ -400,56 +423,56 @@ section {
     text-shadow: 3px 3px 0 #57747D;
 }
 
-.contact-content-con {
+.contact-content-container {
     display: flex;
     padding-top: 3.5rem;
     width: 70vw;
     margin: auto;
 }
 
-.contact-content-con .left-contact {
+.contact-content-container .left-contact {
     flex: 2;
 }
 
-.contact-content-con .left-contact h4 {
+.contact-content-container .left-contact h4 {
     margin-top: 1rem;
     font-size: 2rem;
     text-transform: uppercase;
 }
 
-.contact-content-con .left-contact p {
+.contact-content-container .left-contact p {
     margin: 1rem 0;
     line-height: 2rem;
 }
 
-.contact-content-con .left-contact .contact-info .contact-item {
+.contact-content-container .left-contact .contact-info .contact-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.contact-content-con .left-contact .contact-info .contact-item p {
+.contact-content-container .left-contact .contact-info .contact-item p {
     margin: 0.3rem 0 !important;
     padding: 0 !important;
 }
 
-.contact-content-con .left-contact .contact-info .contact-item .icon {
+.contact-content-container .left-contact .contact-info .contact-item .icon {
     display: grid;
     grid-template-columns: 40px 1fr;
 }
 
-.contact-content-con .left-contact .contact-info .contact-item .icon i {
+.contact-content-container .left-contact .contact-info .contact-item .icon i {
     display: flex;
     align-items: center;
     font-size: 1.3rem;
 }
 
-.contact-content-con .left-contact .contact-icon {
+.contact-content-container .left-contact .contact-icon {
     display: flex;
     margin-top: 2rem;
 }
 
-.contact-content-con .left-contact .contact-icon a {
+.contact-content-container .left-contact .contact-icon a {
     display: flex;
     align-items: center;
     color: var(--color-white);
@@ -463,32 +486,32 @@ section {
     transition: all 0.4s ease-in-out;
 }
 
-.contact-content-con .left-contact .contact-icon a:hover {
+.contact-content-container .left-contact .contact-icon a:hover {
     background-color: var(--color-secondary);
 }
 
-.contact-content-con .left-contact .contact-icon a:hover i {
+.contact-content-container .left-contact .contact-icon a:hover i {
     color: var(--color-primary);
 }
 
-.contact-content-con .left-contact .contact-icon a i {
+.contact-content-container .left-contact .contact-icon a i {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.3rem;
 }
 
-.contact-content-con .right-contact {
+.contact-content-container .right-contact {
     flex: 3;
     margin-left: 3rem;
 }
 
-.contact-content-con .right-contact .input-control {
+.contact-content-container .right-contact .input-control {
     margin: 1.5rem 0;
 }
 
-.contact-content-con .right-contact .input-control input,
-.contact-content-con .right-contact .input-control textarea {
+.contact-content-container .right-contact .input-control input,
+.contact-content-container .right-contact .input-control textarea {
     border-radius: 30px;
     font-weight: inherit;
     font-size: inherit;
@@ -502,15 +525,15 @@ section {
     resize: none;
 }
 
-.contact-content-con .right-contact .i-c-2 {
+.contact-content-container .right-contact .i-c-2 {
     display: flex;
 }
 
-.contact-content-con .right-contact .i-c-2 :last-child {
+.contact-content-container .right-contact .i-c-2 :last-child {
     margin-left: 1.5rem;
 }
 
-.contact-content-con .right-contact .submit-btn {
+.contact-content-container .right-contact .submit-btn {
     display: flex;
     justify-content: flex-start;
 }
@@ -579,27 +602,27 @@ section {
         width: 10rem;
     }
 
-    .contact-content-con {
+    .contact-content-container {
         margin-left: 2rem;
         width: 67vw;
         flex-direction: column;
     }
 
-    .contact-content-con .right-contact {
+    .contact-content-container .right-contact {
         margin-left: 0;
         margin-top: 2.5rem;
     }
 
-    .contact-content-con .right-contact .i-c-2 {
+    .contact-content-container .right-contact .i-c-2 {
         flex-direction: column;
     }
 
-    .contact-content-con .right-contact .i-c-2 :last-child {
+    .contact-content-container .right-contact .i-c-2 :last-child {
         margin-left: 0;
         margin-top: 1.5rem;
     }
 
-    .contact-content-con .right-contact {
+    .contact-content-container .right-contact {
         margin-bottom: 6rem;
     }
 
