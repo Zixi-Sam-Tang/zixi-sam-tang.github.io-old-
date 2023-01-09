@@ -55,7 +55,6 @@ section {
     position: absolute;
     left: 0;
     top: 0;
-    padding-top: 3rem;
 }
 
 .section {
@@ -167,7 +166,7 @@ section {
 }
 
 #gradient {
-    filter: grayscale(15%);
+    filter: grayscale(20%);
 }
 
 .header-content .left-header {
@@ -386,7 +385,7 @@ section {
 }
 
 .about-skills .progress-bars .progress-bar .progress-container .progress .python {
-    width: 50%;
+    width: 25%;
 }
 
 .resume {
@@ -410,6 +409,12 @@ section {
 .resume:hover:after {
     width: 100%;
     left: 0;
+}
+
+.contact-container {
+    height: 100vh;
+    min-height: 100%;
+    padding-top: 2.5rem;
 }
 
 .contact .title h2 {
@@ -633,7 +638,6 @@ section {
 
     .contact-item p {
         font-size: 15px;
-        color: #6c7983;
     }
 
     .contact-item span {

@@ -14,7 +14,7 @@ var step = 0;
 // next color right (3)
 var colorIndices = [0, 1, 2, 3];
 
-const grad = document.getElementById("gradient");
+const grad = document.querySelectorAll("#gradient");
 
 //transition speed
 var gradientSpeed = 0.001;
@@ -37,7 +37,9 @@ function updateGradient() {
   var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
   var color2 = "rgb(" + r2 + "," + g2 + "," + b2 + ")";
 
-  grad.style.background = 'linear-gradient(180deg, ' + color1 + ' 0%,' + color2 + ' 100%)';
+  grad.forEach(element => {
+    element.style.background = 'linear-gradient(180deg, ' + color1 + ' 0%,' + color2 + ' 100%)';
+  });
 
   step += gradientSpeed;
   if (step >= 1) {
