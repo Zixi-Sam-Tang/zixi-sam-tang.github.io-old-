@@ -275,6 +275,7 @@ section {
 }
 
 .about-container .information {
+    padding-top: 2.5rem;
     width: 50vw;
     margin: auto;
 }
